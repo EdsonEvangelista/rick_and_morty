@@ -3,7 +3,6 @@ import styleNav from  "./Nav.module.css";
 
 const Nav = (props) => {
 
-
     return (
         <div className={styleNav.NavContenedor}>
             <SearchBar onSearch={(characterID) => window.alert(characterID)} />
