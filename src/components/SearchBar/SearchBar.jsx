@@ -1,6 +1,8 @@
+import styleSearch from "./SearchBar.module.css";
+
 function SearchBar({onSearch}) {      
    return (
-      <div>
+      <div className={styleSearch.contenedor} >
          <input type='search' />
       <button onClick={onSearch}>Agregar</button>
       </div>
