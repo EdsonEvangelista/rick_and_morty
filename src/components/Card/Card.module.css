@@ -2,9 +2,10 @@
     border: 1px solid grey;
     background-color: lightgrey;
     border-radius: 0.7rem;
-    width: 11rem;
+    width: 10rem;
     padding: 0.7rem;
     box-shadow: 0 0 10px black;
+    size: 10rem;
 }
 
 .image {
@@ -12,15 +13,25 @@
     border-radius: 999999rem;
 }
 
-.buttonContainer button {
-    /* border: 1px solid grey; */
+.buttonContainer {
     display: flex;
     justify-content: flex-end;
 }
 
 .buttonContainer button {
-    background-color: salmon;
+    background-color: rgb(190, 36, 18);
     color: white;
     border: 0px;
     border-radius: 999999rem;
+}
+
+.dataContainer {
+    text-align: center;
+    padding: 1rem;
+}
+
+.dataContainer h2 {
+    margin: 2px;
+    font-size: 1rem;
+    color: darkslategray;
 }

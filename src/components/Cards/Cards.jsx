@@ -1,9 +1,10 @@
 import Card from '../Card/Card';
-
+import styles from './Cards.module.css'
+// style={{justifyContent:'center' ,display:'flex' ,flexDirection:'row'}
 function Cards({characters}) {
 
    return (
-      <div style={{justifyContent:'center' ,display:'flex' ,flexDirection:'row'}}>
+      <div className={styles.container}>
          {
             characters.map( ({id,name,species,gender,image}) => {
                return (

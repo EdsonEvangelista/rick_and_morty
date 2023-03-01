@@ -1,7 +1,29 @@
-.contenedor{
-  display: flex;
-  flex-direction: row;
+.container{
+  /* display: flex;
+  flex-direction: row; */
   /* flex-wrap: wrap; */
-  justify-content: right;
-  align-items: right;
+  /* justify-content: right;
+  align-items: right; */
+
+  display: flex;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.container input {
+  border-radius: 5px;
+  height: 20px;
+}
+
+.button {
+  border-radius: 4px;
+  height: 20px;
+  width: auto;
+  background-color: darkslategrey;
+  color: white;
+  padding: 0 10 0 10px;
+  font-size: 11px;
+  border: 0px;
+  
 }

@@ -1,11 +1,11 @@
 import SearchBar from "../SearchBar/SearchBar";
 import styleNav from  "./Nav.module.css";
 
-const Nav = (props) => {
+const Nav = ({ onSearch }) => {
 
     return (
-        <div className={styleNav.NavContenedor}>
-            <SearchBar onSearch={(characterID) => window.alert(characterID)} />
+        <div>
+            <SearchBar onSearch={onSearch} />
         </div>
     )
 
