@@ -1,0 +1,26 @@
+.container {
+    border: 1px solid grey;
+    background-color: lightgrey;
+    border-radius: 0.7rem;
+    width: 11rem;
+    padding: 0.7rem;
+    box-shadow: 0 0 10px black;
+}
+
+.image {
+    width: 9rem;
+    border-radius: 999999rem;
+}
+
+.buttonContainer button {
+    /* border: 1px solid grey; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttonContainer button {
+    background-color: salmon;
+    color: white;
+    border: 0px;
+    border-radius: 999999rem;
+}
