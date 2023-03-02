@@ -4,8 +4,6 @@
     border-radius: 0.7rem;
     width: 10rem;
     padding: 0.7rem;
-    box-shadow: 0 0 10px black;
-    size: 10rem;
 }
 
 .image {
@@ -16,6 +14,7 @@
 .buttonContainer {
     display: flex;
     justify-content: flex-end;
+    /* width: 2rem; */
 }
 
 .buttonContainer button {
@@ -23,6 +22,8 @@
     color: white;
     border: 0px;
     border-radius: 999999rem;
+    width: 1.8rem;
+    height: 1.8rem;
 }
 
 .dataContainer {

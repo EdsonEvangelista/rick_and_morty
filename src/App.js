@@ -1,7 +1,10 @@
 import './App.css'
-import Cards from './components/Cards/Cards.jsx'
-import Nav from './components/Nav/Nav.jsx'
-import { useState } from 'react'
+import Cards from './components/Cards/Cards.jsx';
+import Nav from './components/Nav/Nav.jsx';
+import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import About from './components/About/About';
+import Detail from './components/Detail/Detail';
 
 function App () {
 
@@ -19,18 +22,20 @@ function App () {
     });
   };
 
-  const onClose = () => {
-    
+  const onClose = (id) => {
+    setCharacters(
+      characters.filter(character => character.id !== id)
+    )
   }
 
   return (
     <div className='App' style={{ padding: '25px' }}>
       <Nav onSearch={onSearch}/>
-      <div>
-        <Cards
-          characters={characters}
-        />
-      </div>
+      <Routes>
+        <Route path='/home' element={<Cards onClose={onClose} characters={characters}/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/detail/:detailId' element={<Detail/>} />
+      </Routes>
     </div>
   )
 }
